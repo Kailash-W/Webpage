@@ -1,96 +1,283 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Website</title>
 
-    <!-- Link naar de aparte CSS -->
+    <title>Software Development</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- HEADER / NAVIGATION -->
+    <!-- HEADER -->
     <header>
-        
-        <!-- Logo links -->
+
         <div class="logo">
-            <img src="images/logo.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo">
         </div>
 
-        <!-- Navigatie rechts -->
+        <!-- NAVIGATIE -->
         <nav>
-            <a href="#">Wie zijn wij?</a>
-            <a href="#">Over ons</a>
-            <a href="#">Opleiding</a>
+            <a href="#verwachten">Wat moet je verwachten</a>
+            <a href="#levels">Levels</a>
+            <a href="#rooster">Rooster</a>
         </nav>
 
     </header>
 
 
-    <!-- BODY / MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
 
-        <!-- Groot informatieblok -->
-        <section class="intro">
 
-            <!-- Grote afbeelding links -->
+        <!-- WAT MOET JE VERWACHTEN -->
+        <section class="intro" id="verwachten">
+
             <div class="intro-image">
-                <img src="images/hoofdfoto.jpg" alt="Hoofdfoto">
+                <img src="img/knip.jpg" alt="Software Development">
             </div>
 
-            <!-- Tekst rechts -->
             <div class="intro-text">
-                <h1>Wie zijn wij?</h1>
+
+                <h1>Wat moet je verwachten?</h1>
+
                 <p>
-                    Hier komt de tekst over wie wij zijn.
-                    Deze tekst kunnen we later vervangen door
-                    de echte informatie.
+                    Tijdens de opleiding Software Development leer je
+                    programmeren, samenwerken en werken aan echte projecten.
+                    Je ontwikkelt jezelf stap voor stap en krijgt steeds
+                    meer verantwoordelijkheid.
                 </p>
+
             </div>
 
         </section>
 
 
-        <!-- OVER ONS BLOK -->
+        <!-- CHALLENGES -->
         <section class="about">
 
-            <h2>Over ons</h2>
+            <h2>Challenges</h2>
 
             <p>
-                Hier komt een korte tekst over ons.
+                Challenges zijn projecten van drie weken waarin je
+                individueel of in een groep aan een praktijkopdracht werkt.
+                Je gebruikt hierbij de kennis en vaardigheden die je tijdens
+                de opleiding leert.
             </p>
 
         </section>
 
 
-        <!-- DRIE INFORMATIEBLOKKEN -->
-        <section class="info-blocks">
+        <!-- LEVELS -->
+        <section class="info-blocks" id="levels">
 
-            <!-- Blok 1 -->
+            <!-- LEVEL 1 -->
             <div class="info-block">
-                <h3>Informatie 1</h3>
+
+                <h3>Level 1</h3>
+
                 <p>
-                    Hier komt de informatie voor het eerste blok.
+                    De basis van webdevelopment.
+                    Je leert onder andere HTML en CSS.
+                    Level 1 duurt 24 weken.
                 </p>
+
             </div>
 
-            <!-- Blok 2 -->
+
+            <!-- LEVEL 2 -->
             <div class="info-block">
-                <h3>Informatie 2</h3>
+
+                <h3>Level 2</h3>
+
                 <p>
-                    Hier komt de informatie voor het tweede blok.
+                    Je werkt zelfstandiger en krijgt meer keuzevrijheid.
+                    Je werkt aan complexere challenges en bepaalt
+                    steeds meer je eigen tempo.
                 </p>
+
             </div>
 
-            <!-- Blok 3 -->
+
+            <!-- LEVEL 3 -->
             <div class="info-block">
-                <h3>Informatie 3</h3>
+
+                <h3>Level 3</h3>
+
                 <p>
-                    Hier komt de informatie voor het derde blok.
+                    Dit level is gericht op de beroepspraktijk.
+                    Je krijgt onder andere stage en werkt met
+                    echte challenges uit het werkveld.
                 </p>
+
             </div>
+
+        </section>
+
+
+        <!-- OPBOUW VAN EEN UNIT -->
+        <section class="unit-section">
+
+            <div class="unit-title">
+
+                <span>DE OPLEIDING</span>
+
+                <h2>Opbouw van een unit</h2>
+
+                <p>
+                    Een unit duurt vier weken en combineert theorie,
+                    praktijk, begeleiding en reflectie.
+                </p>
+
+            </div>
+
+
+            <div class="unit-content">
+
+                <!-- MODULE -->
+                <div class="unit-main">
+
+                    <div class="unit-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>Module</h3>
+
+                        <span>4 weken</span>
+
+                        <p>
+                            Tijdens de module leer je theorie en pas je deze
+                            toe in de praktijk. De module is gericht op een
+                            specifiek onderwerp en wordt afgesloten met een
+                            SD-certificaat.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CHALLENGE -->
+                <div class="unit-main">
+
+                    <div class="unit-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>Challenge</h3>
+
+                        <span>3 weken</span>
+
+                        <p>
+                            Tijdens de challenge werk je projectmatig en in
+                            sprints aan een praktijkopdracht. Je gebruikt de
+                            kennis uit de opleiding om leeruitkomsten aan te tonen.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MASTERCLASSES -->
+                <div class="unit-main">
+
+                    <div class="unit-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>Masterclasses</h3>
+
+                        <span>Tijdens de challenge</span>
+
+                        <p>
+                            Masterclasses zijn korte lessen van ongeveer
+                            45 tot 60 minuten. Ze behandelen een specifiek
+                            onderwerp en vinden naast de challenge plaats.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REFLECTIEWEEK -->
+                <div class="unit-main">
+
+                    <div class="unit-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>Reflectieweek</h3>
+
+                        <span>1 week</span>
+
+                        <p>
+                            In de reflectieweek bereid je je portfolio voor,
+                            verzamel je leeruitkomsten en reflecteer je op
+                            je eigen ontwikkeling. Daarna stel je nieuwe
+                            leerdoelen op.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EERSTE JAAR ROOSTER -->
+        <section class="schedule-section" id="rooster">
+
+            <div class="schedule-title">
+
+                <span>EERSTE JAAR</span>
+
+                <h2>Eerste jaar rooster</h2>
+
+            </div>
+
+
+            <div class="schedule-image">
+
+                <img src="img/rooster.png" alt="Rooster eerste jaar">
+
+            </div>
+
+        </section>
+
+
+        <!-- DOORLOOPTIJD -->
+        <section class="duration-section">
+
+            <div>
+
+                <span class="small-title">
+                    DOORLOOPTIJD
+                </span>
+
+                <h2>4 jaar</h2>
+
+            </div>
+
+            <p>
+                De reguliere opleiding duurt vier jaar.
+                Een versneld traject van drie jaar is mogelijk wanneer je
+                zelfstandig leeruitkomsten kunt aantonen.
+            </p>
 
         </section>
 
@@ -100,19 +287,25 @@
     <!-- FOOTER -->
     <footer>
 
-        <!-- Social media links links -->
         <div class="social-media">
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">TikTok</a>
+
+            <a href="https://www.instagram.com/curio.onderwijs/">Instagram</a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fcurioonderwijs%2F%3Flocale%3Dnl_NL">Facebook</a>
+            <a href="https://www.youtube.com/c/curioonderwijsgroep">Youtube</a>
+
         </div>
 
-        <!-- Contact rechts -->
+
         <div class="contact">
+
             <p>Contact</p>
+            <p>infopunt@curio.nl</p>
+
         </div>
 
     </footer>
 
+
 </body>
+
 </html>

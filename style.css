@@ -1,176 +1,633 @@
-/* =========================
+/* ========================================
    ALGEMEEN
-   ========================= */
+   ======================================== */
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --max-width: 1200px;
+
+    --background: #f7f8fa;
+    --white: #ffffff;
+
+    --text: #263238;
+    --text-light: #607d8b;
+
+    --primary: #3f6f78;
+    --primary-light: #dce9eb;
+
+    --border: #d7dfe3;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
 }
 
 
-/* =========================
+/* ========================================
    HEADER
-   ========================= */
+   ======================================== */
 
 header {
     width: 100%;
-    height: 100px;
+    min-height: 90px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding: 10px 40px;
+    padding: 15px 5%;
 
-    border-bottom: 1px solid #000;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border);
 }
 
-/* Logo links */
+
+/* Logo */
+
 .logo img {
-    width: 170px;
-    height: 70px;
-
-    object-fit: contain;
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
-/* Navigatie rechts */
+
+/* Navigatie */
+
 nav {
     display: flex;
+    align-items: center;
     gap: 40px;
 }
 
 nav a {
+    color: var(--text);
     text-decoration: none;
-    color: black;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: var(--primary);
 }
 
 
-/* =========================
+/* ========================================
    MAIN
-   ========================= */
+   ======================================== */
 
 main {
-    padding: 60px 80px;
+    width: 90%;
+    max-width: var(--max-width);
+
+    margin: 0 auto;
+
+    padding: 60px 0;
 }
 
 
-/* =========================
-   INTRODUCTIE
-   ========================= */
+/* ========================================
+   INTRO
+   ======================================== */
 
 .intro {
-    display: flex;
+    display: grid;
 
-    width: 100%;
+    grid-template-columns: 2fr 1fr;
 
-    gap: 80px;
+    gap: 50px;
+
+    align-items: center;
+
+    margin-bottom: 80px;
 }
 
-/* Grote afbeelding links */
+
+/* Afbeelding */
+
 .intro-image {
-    width: 65%;
+    width: 100%;
 }
 
 .intro-image img {
     width: 100%;
     height: 430px;
 
+    display: block;
+
     object-fit: cover;
+
+    border-radius: 10px;
 }
 
-/* Tekst rechts */
-.intro-text {
-    width: 35%;
 
-    padding-top: 20px;
+/* Intro tekst */
+
+.intro-text {
+    padding: 20px;
 }
 
 .intro-text h1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    font-size: 36px;
+    line-height: 1.2;
+
+    color: var(--primary);
+}
+
+.intro-text p {
+    font-size: 17px;
+    color: var(--text-light);
 }
 
 
-/* =========================
+/* ========================================
    OVER ONS
-   ========================= */
+   ======================================== */
 
 .about {
-    width: 350px;
+    max-width: 650px;
 
-    margin: 40px auto;
+    margin: 0 auto 70px;
+
+    padding: 35px;
 
     text-align: center;
+
+    background-color: var(--primary-light);
+
+    border-radius: 10px;
 }
 
 .about h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+
+    font-size: 30px;
+
+    color: var(--primary);
+}
+
+.about p {
+    font-size: 16px;
+
+    color: var(--text);
 }
 
 
-/* =========================
-   DRIE BLOKKEN
-   ========================= */
+/* ========================================
+   DRIE INFORMATIE BLOKKEN
+   ======================================== */
 
 .info-blocks {
-    display: flex;
+    display: grid;
 
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 50px;
-
-    margin-top: 50px;
+    gap: 30px;
 }
+
+
+/* Blok */
 
 .info-block {
-    width: 30%;
     min-height: 250px;
 
-    border: 1px solid black;
+    padding: 30px;
 
-    padding: 25px;
+    background-color: var(--white);
 
-    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
+
+
+/* Hover */
+
+.info-block:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Titel */
 
 .info-block h3 {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    color: var(--primary);
 }
 
 
-/* =========================
+/* Tekst */
+
+.info-block p {
+    font-size: 16px;
+
+    color: var(--text-light);
+}
+
+
+/* ========================================
    FOOTER
-   ========================= */
+   ======================================== */
 
 footer {
     width: 100%;
-    height: 100px;
 
     display: flex;
 
     align-items: center;
     justify-content: space-between;
 
-    padding: 20px 50px;
+    padding: 30px 5%;
 
-    border-top: 1px solid black;
+    background-color: var(--white);
+
+    border-top: 1px solid var(--border);
 }
 
-/* Social media links */
+
+/* Social media */
+
 .social-media {
     display: flex;
-    gap: 30px;
+
+    gap: 25px;
 }
 
 .social-media a {
+    color: var(--text-light);
+
     text-decoration: none;
-    color: black;
+
+    font-size: 14px;
+
+    transition: color 0.2s ease;
 }
 
-/* Contact rechts */
+.social-media a:hover {
+    color: var(--primary);
+}
+
+
+/* Contact */
+
 .contact {
     text-align: right;
+}
+
+.contact p {
+    font-size: 14px;
+
+    color: var(--text-light);
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 900px) {
+
+    .intro {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .intro-text {
+        padding: 0;
+    }
+
+    .info-blocks {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* ========================================
+   MOBIEL
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        padding: 20px;
+    }
+
+    nav {
+        gap: 20px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    main {
+        width: 90%;
+
+        padding: 40px 0;
+    }
+
+
+    .intro {
+        margin-bottom: 50px;
+    }
+
+
+    .intro-image img {
+        height: 250px;
+    }
+
+
+    .intro-text h1 {
+        font-size: 28px;
+    }
+
+
+    .about {
+        padding: 25px;
+
+        margin-bottom: 50px;
+    }
+
+
+    .about h2 {
+        font-size: 25px;
+    }
+
+
+    .info-blocks {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .info-block {
+        min-height: auto;
+    }
+
+
+    footer {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+
+    .social-media {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    .contact {
+        text-align: center;
+    }
+}
+
+/* ========================================
+   OPBOUW VAN EEN UNIT
+   ======================================== */
+
+.unit-section {
+    margin: 90px 0;
+}
+
+.unit-title {
+    max-width: 650px;
+    margin-bottom: 45px;
+}
+
+.unit-title span,
+.small-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+.unit-title h2 {
+    margin: 8px 0 15px;
+    font-size: 32px;
+    color: var(--text);
+}
+
+.unit-title p {
+    color: var(--text-light);
+}
+
+.unit-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 1px;
+
+    background-color: var(--border);
+
+    border: 1px solid var(--border);
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.unit-main {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    background-color: var(--white);
+}
+
+.unit-number {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.unit-main h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.unit-main span {
+    display: block;
+
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    color: var(--primary);
+}
+
+.unit-main p {
+    color: var(--text-light);
+}
+
+
+/* ========================================
+   DOORLOOPTIJD
+   ======================================== */
+
+.duration-section {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+
+    margin: 90px 0 30px;
+
+    padding-top: 40px;
+
+    border-top: 1px solid var(--border);
+}
+
+.duration-section h2 {
+    margin-top: 5px;
+
+    font-size: 42px;
+    color: var(--primary);
+}
+
+.duration-section p {
+    color: var(--text-light);
+}
+
+
+/* ========================================
+   MOBIEL
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .unit-content {
+        grid-template-columns: 1fr;
+    }
+
+    .masterclass-section {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 30px;
+    }
+
+    .duration-section {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .duration-section h2 {
+        font-size: 36px;
+    }
+}
+
+/* ========================================
+   EERSTE JAAR ROOSTER
+   ======================================== */
+
+.schedule-section {
+    margin: 90px 0;
+}
+
+.schedule-title {
+    margin-bottom: 30px;
+}
+
+.schedule-title span {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+
+.schedule-title h2 {
+    margin-top: 8px;
+
+    font-size: 32px;
+    color: var(--text);
+}
+
+.schedule-image {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.schedule-image img {
+    width: 100%;
+    max-width: 900px;
+    max-height: 650px;
+
+    height: auto;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background-color: var(--white);
+}
+
+
+/* ========================================
+   ROOSTER MOBIEL
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .schedule-section {
+        margin: 60px 0;
+    }
+
+    .schedule-title h2 {
+        font-size: 28px;
+    }
+
+    .schedule-image img {
+        max-height: 500px;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
