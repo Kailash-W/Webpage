@@ -42,7 +42,7 @@
 
             <div class="intro-text">
 
-                <h1>Wat moet je verwachten?</h1>
+                <h1 class="text-color">Wat moet je verwachten?</h1>
 
                 <p>
                     Tijdens de opleiding Software Development leer je
@@ -121,7 +121,7 @@
         <!-- OPBOUW VAN EEN UNIT -->
         <section class="unit-section">
 
-            <div class="unit-title">
+            <div class="unit-title text-color">
 
                 <span>DE OPLEIDING</span>
 
@@ -242,7 +242,7 @@
         <!-- EERSTE JAAR ROOSTER -->
         <section class="schedule-section" id="rooster">
 
-            <div class="schedule-title">
+            <div class="schedule-title text-color">
 
                 <span>EERSTE JAAR</span>
 
@@ -263,7 +263,7 @@
         <!-- DOORLOOPTIJD -->
         <section class="duration-section">
 
-            <div>
+            <div class="text-color">
 
                 <span class="small-title">
                     DOORLOOPTIJD
@@ -273,7 +273,7 @@
 
             </div>
 
-            <p>
+            <p class="text-color">
                 De reguliere opleiding duurt vier jaar.
                 Een versneld traject van drie jaar is mogelijk wanneer je
                 zelfstandig leeruitkomsten kunt aantonen.

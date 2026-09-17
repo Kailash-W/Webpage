@@ -11,17 +11,20 @@
 :root {
     --max-width: 1200px;
 
-    --background: #f7f8fa;
-    --white: #ffffff;
+    --background: #004c35;
+    --white: #f8aecd;
 
-    --text: #263238;
-    --text-light: #607d8b;
+    --text: #004c35;
+    --text-light: #004c35;
 
-    --primary: #3f6f78;
-    --primary-light: #dce9eb;
+    --primary: #004c35;
+    --primary-light: #f8aecd;
 
     --border: #d7dfe3;
 }
+
+
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -143,12 +146,12 @@ main {
     font-size: 36px;
     line-height: 1.2;
 
-    color: var(--primary);
+    color: #f8aecd;
 }
 
 .intro-text p {
     font-size: 17px;
-    color: var(--text-light);
+    color: #f8aecd;
 }
 
 
@@ -630,4 +633,12 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+/* Coloroverwrite  */
+
+.text-color{
+    --text: #f8aecd;
+    --text-light: #f8aecd;
+    --primary: #f8aecd;
 }
