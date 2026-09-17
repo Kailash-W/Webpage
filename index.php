@@ -259,6 +259,16 @@
 
         </section>
 
+        <!-- SFEER -->
+        <section class="extra-section pink-section">
+            <h2>Sfeer</h2>
+            <p>
+                De sfeer in de klas is gezellig en open. Je werkt samen met
+                andere studenten, helpt elkaar en krijgt ruimte om jezelf
+                te ontwikkelen binnen de opleiding. 
+            </p>
+        </section>
+
 
         <!-- DOORLOOPTIJD -->
         <section class="duration-section">
@@ -277,6 +287,27 @@
                 De reguliere opleiding duurt vier jaar.
                 Een versneld traject van drie jaar is mogelijk wanneer je
                 zelfstandig leeruitkomsten kunt aantonen.
+            </p>
+
+        </section>
+
+        <!-- VERSNELLING -->
+        <section class="duration-section acceleration-section">
+
+            <div class="text-color">
+
+                <span class="small-title">
+                    VERSNELLING
+                </span>
+
+                <h2>Versnelling</h2>
+
+            </div>
+
+            <p class="text-color">
+                Wanneer je de leeruitkomsten sneller onder de knie hebt,
+                kun je mogelijk versnellen en eerder doorstromen binnen
+                de opleiding.
             </p>
 
         </section>

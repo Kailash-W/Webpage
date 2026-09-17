@@ -248,6 +248,36 @@ main {
 }
 
 
+
+/* ========================================
+   EXTRA GEDEELTES: SFEER & VERSNELLING
+   ======================================== */
+
+.extra-section {
+    max-width: 650px;
+    margin: 0 auto 80px;
+    padding: 35px;
+    text-align: center;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.extra-section h2 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.extra-section p {
+    font-size: 16px;
+    color: var(--text);
+}
+
+.pink-section {
+    background-color: #f8aecd;
+}
+
 /* ========================================
    FOOTER
    ======================================== */
@@ -378,6 +408,11 @@ footer {
     .about {
         padding: 25px;
 
+        margin-bottom: 50px;
+    }
+
+    .extra-section {
+        padding: 25px;
         margin-bottom: 50px;
     }
 
@@ -520,6 +555,12 @@ footer {
     padding-top: 40px;
 
     border-top: 1px solid var(--border);
+}
+
+/* Geen extra lijn boven Versnelling */
+.acceleration-section {
+    border-top: none;
+    margin-top: 30px;
 }
 
 .duration-section h2 {
